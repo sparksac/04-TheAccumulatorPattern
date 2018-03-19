@@ -353,7 +353,7 @@ def sum_unit_fractions_from(m, n):
     """
     What comes in:  Two positive integers m and n with m <= n.
     What goes out:  Returns the sum:
-      1/m + 1/(m+1) + 1/(m+2) + ... + 1/n.
+      1/m + 1/(m+1) + 1/(m+2) + ... + 1/n.0.427020
     Side effects:   None.
     Examples:
       -- sum_unit_fractions_from(6, 9) returns
