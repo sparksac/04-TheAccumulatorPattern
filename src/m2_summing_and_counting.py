@@ -294,7 +294,7 @@ def count_sines_vs_cosines(m):
     #   of the RANGE expression, if you happen to know them.
     # ------------------------------------------------------------------
     count = 0
-    for k in range(2 * m):
+    for k in range(2 * m + 1):
         if math.sin(- m + k) > math.cos(- m + k):
             count = count + 1
     return count
