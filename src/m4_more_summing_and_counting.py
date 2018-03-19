@@ -90,7 +90,7 @@ def run_test_sum_from():
     print('       actual (from my code):  ', answer_from_my_code)
 
 # ----------------------------------------------------------------------
-# TODO: 2.
+# Done: 2.
 #   When you have READ the above  run_test_sum_from  function,
 #   asking questions as needed, and you feel that you (mostly, at least)
 #   understand it, and you feel that you understand from the example:
@@ -114,7 +114,7 @@ def sum_from(m, n):
         sum_from(6, 9) returns 6 + 7 + 8 + 9, that is, 30.
     """
     # ------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # done: 3. Implement and test this function.
     #          Tests have been written for you (above).
     #
     # IMPORTANT:  Your solution MUST
@@ -160,6 +160,24 @@ def run_test_factorial():
     print('Test 2 expected (from oracle):', answer_from_oracle)
     print('       actual (from my code): ', answer_from_my_code)
 
+    # Test 3
+    answer_from_oracle = math.factorial(15)
+    answer_from_my_code = factorial(15)
+    print('Test 3 expected (from oracle):', answer_from_oracle)
+    print('       actual (from my code): ', answer_from_my_code)
+
+    # Test 4
+    answer_from_oracle = math.factorial(4)
+    answer_from_my_code = factorial(4)
+    print('Test 4 expected (from oracle):', answer_from_oracle)
+    print('       actual (from my code): ', answer_from_my_code)
+
+    # Test 5
+    answer_from_oracle = math.factorial(16)
+    answer_from_my_code = factorial(16)
+    print('Test 5 expected (from oracle):', answer_from_oracle)
+    print('       actual (from my code): ', answer_from_my_code)
+
     # ------------------------------------------------------------------
     # TO DO: 4 (continued).
     # Below this comment, add 3 more test cases, at least two of which
@@ -177,12 +195,16 @@ def factorial(n):
         factorial(0) returns 1 (by definition).
     """
     # ------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # Done: 5. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #
     # IMPORTANT:  Your solution MUST
     #   use an explicit    for ... in range(...):     statement.
     # ------------------------------------------------------------------
+    total = 1
+    for k in range(n):
+        total = total * (k + 1)
+    return total
 
 
 def run_test_count_cosines_from():
